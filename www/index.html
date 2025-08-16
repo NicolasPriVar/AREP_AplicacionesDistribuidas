@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Servidor Web en Java</title>
+    <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+<header>
+    <h1>Servidor Web en Java</h1>
+</header>
+
+<main>
+    <section>
+        <h2>Contenido estático</h2>
+        <p>Los archivos de la página provienen de la carpeta <code>www/</code>.</p>
+        <img src="/img/logo.png" alt="Logo de prueba" width="180" />
+    </section>
+
+    <section>
+        <h2>Servicio: GET /app/hello?name=...</h2>
+        <label>Nombre:
+            <input id="name" type="text" value="Jhon"/>
+        </label>
+        <button id="btnHello">Probar servicio</button>
+        <pre id="outHello"></pre>
+    </section>
+
+    <section>
+        <h2>Servicio: GET /app/time</h2>
+        <button id="btnTime">Consultar hora actual</button>
+        <pre id="outTime"></pre>
+    </section>
+
+    <section>
+        <h2>Servicio: POST /app/echo</h2>
+        <label>Mensaje:
+            <input id="msg" type="text" value="Texto de ejemplo" />
+        </label>
+        <button id="btnEcho">Enviar mensaje</button>
+        <pre id="outEcho"></pre>
+    </section>
+</main>
+
+
+<script src="/script.js"></script>
+</body>
+</html>
